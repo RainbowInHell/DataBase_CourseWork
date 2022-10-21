@@ -53,7 +53,7 @@
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.Location = new System.Drawing.Point(479, 37);
-            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.Size = new System.Drawing.Size(81, 76);
@@ -67,9 +67,9 @@
             this.label2.Location = new System.Drawing.Point(409, 123);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 29);
+            this.label2.Size = new System.Drawing.Size(214, 29);
             this.label2.TabIndex = 97;
-            this.label2.Text = "Reset Password";
+            this.label2.Text = "Сбросить пароль";
             // 
             // label1
             // 
@@ -79,9 +79,9 @@
             this.label1.Location = new System.Drawing.Point(737, 176);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 25);
+            this.label1.Size = new System.Drawing.Size(72, 25);
             this.label1.TabIndex = 103;
-            this.label1.Text = "Answer";
+            this.label1.Text = "Ответ";
             // 
             // answerField
             // 
@@ -95,7 +95,7 @@
             this.answerField.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answerField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.answerField.Location = new System.Drawing.Point(743, 204);
-            this.answerField.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.answerField.Margin = new System.Windows.Forms.Padding(5);
             this.answerField.Name = "answerField";
             this.answerField.PasswordChar = '\0';
             this.answerField.PlaceholderText = "";
@@ -124,7 +124,7 @@
             "Which street did you grow up as a kid?",
             "What is the name of the main character in your favourite movie?"});
             this.secQCMBox.Location = new System.Drawing.Point(68, 203);
-            this.secQCMBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.secQCMBox.Margin = new System.Windows.Forms.Padding(4);
             this.secQCMBox.Name = "secQCMBox";
             this.secQCMBox.Size = new System.Drawing.Size(615, 36);
             this.secQCMBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -138,9 +138,9 @@
             this.label10.Location = new System.Drawing.Point(63, 176);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(239, 25);
+            this.label10.Size = new System.Drawing.Size(174, 25);
             this.label10.TabIndex = 100;
-            this.label10.Text = "Select a security question.";
+            this.label10.Text = "Выберите вопрос";
             // 
             // verifyBtn
             // 
@@ -151,11 +151,11 @@
             this.verifyBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.verifyBtn.ForeColor = System.Drawing.Color.White;
             this.verifyBtn.Location = new System.Drawing.Point(413, 268);
-            this.verifyBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.verifyBtn.Margin = new System.Windows.Forms.Padding(4);
             this.verifyBtn.Name = "verifyBtn";
             this.verifyBtn.Size = new System.Drawing.Size(240, 55);
             this.verifyBtn.TabIndex = 104;
-            this.verifyBtn.Text = "Verify";
+            this.verifyBtn.Text = "Подтвердить";
             // 
             // label4
             // 
@@ -165,9 +165,9 @@
             this.label4.Location = new System.Drawing.Point(265, 417);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 25);
+            this.label4.Size = new System.Drawing.Size(185, 25);
             this.label4.TabIndex = 108;
-            this.label4.Text = "Confirm Password";
+            this.label4.Text = "Повторите пароль";
             // 
             // label3
             // 
@@ -177,9 +177,9 @@
             this.label3.Location = new System.Drawing.Point(309, 359);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 25);
+            this.label3.Size = new System.Drawing.Size(141, 25);
             this.label3.TabIndex = 107;
-            this.label3.Text = "New Password";
+            this.label3.Text = "Новый пароль";
             // 
             // confirmPassField
             // 
@@ -244,21 +244,22 @@
             this.changeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeBtn.ForeColor = System.Drawing.Color.White;
             this.changeBtn.Location = new System.Drawing.Point(423, 464);
-            this.changeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.changeBtn.Margin = new System.Windows.Forms.Padding(4);
             this.changeBtn.Name = "changeBtn";
             this.changeBtn.Size = new System.Drawing.Size(240, 55);
             this.changeBtn.TabIndex = 109;
-            this.changeBtn.Text = "Change Password";
+            this.changeBtn.Text = "Поменять пароль";
             // 
             // guna2ImageRadioButton1
             // 
             this.guna2ImageRadioButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageRadioButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.guna2ImageRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ImageRadioButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.Image")));
             this.guna2ImageRadioButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageRadioButton1.ImageRotate = 0F;
             this.guna2ImageRadioButton1.Location = new System.Drawing.Point(1019, 15);
-            this.guna2ImageRadioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ImageRadioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ImageRadioButton1.Name = "guna2ImageRadioButton1";
             this.guna2ImageRadioButton1.Size = new System.Drawing.Size(32, 30);
             this.guna2ImageRadioButton1.TabIndex = 110;
@@ -282,7 +283,7 @@
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ResetPasswordScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ResetPassword";

@@ -117,6 +117,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StartScreens\SuperAdminLoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartScreens\SuperAdminLoginScreen.Designer.cs">
+      <DependentUpon>SuperAdminLoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartScreens\UserLoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartScreens\UserLoginScreen.Designer.cs">
+      <DependentUpon>UserLoginScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaticClasses\DatabaseConnection.cs" />
     <Compile Include="StartScreens\LoadScreen.cs">
       <SubType>Form</SubType>
@@ -157,6 +169,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StartScreens\ResetPasswordScreen.resx">
       <DependentUpon>ResetPasswordScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartScreens\SuperAdminLoginScreen.resx">
+      <DependentUpon>SuperAdminLoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartScreens\UserLoginScreen.resx">
+      <DependentUpon>UserLoginScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

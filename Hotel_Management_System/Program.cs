@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel_Management_System.StartScreens;
+using System;
 using System.Windows.Forms;
 
 namespace Hotel_Management_System
@@ -13,7 +14,7 @@ namespace Hotel_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoadScreen());
+            Application.Run(new UserLoginScreen());
         }
     }
 }

@@ -117,6 +117,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DashboardScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardScreen.Designer.cs">
+      <DependentUpon>DashboardScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartScreens\SuperAdminLoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StaticClasses\Statics.cs" />
+    <EmbeddedResource Include="DashboardScreen.resx">
+      <DependentUpon>DashboardScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StartScreens\CreatePasswordScreen.resx">
       <DependentUpon>CreatePasswordScreen.cs</DependentUpon>
     </EmbeddedResource>

@@ -123,6 +123,30 @@
     <Compile Include="DashboardScreen.Designer.cs">
       <DependentUpon>DashboardScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoomsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomsScreen.Designer.cs">
+      <DependentUpon>RoomsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomTypeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomTypeScreen.Designer.cs">
+      <DependentUpon>RoomTypeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicesScreen.Designer.cs">
+      <DependentUpon>ServicesScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowDefaultScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowDefaultScreen.Designer.cs">
+      <DependentUpon>ShowDefaultScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartScreens\SuperAdminLoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +184,18 @@
     <Compile Include="StaticClasses\Statics.cs" />
     <EmbeddedResource Include="DashboardScreen.resx">
       <DependentUpon>DashboardScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomsScreen.resx">
+      <DependentUpon>RoomsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomTypeScreen.resx">
+      <DependentUpon>RoomTypeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicesScreen.resx">
+      <DependentUpon>ServicesScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowDefaultScreen.resx">
+      <DependentUpon>ShowDefaultScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartScreens\CreatePasswordScreen.resx">
       <DependentUpon>CreatePasswordScreen.cs</DependentUpon>

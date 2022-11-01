@@ -123,6 +123,18 @@
     <Compile Include="DashboardScreen.Designer.cs">
       <DependentUpon>DashboardScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="HotelIntroScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelIntroScreen.Designer.cs">
+      <DependentUpon>HotelIntroScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelsScreen.Designer.cs">
+      <DependentUpon>HotelsScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoomsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +196,12 @@
     <Compile Include="StaticClasses\Statics.cs" />
     <EmbeddedResource Include="DashboardScreen.resx">
       <DependentUpon>DashboardScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelIntroScreen.resx">
+      <DependentUpon>HotelIntroScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelsScreen.resx">
+      <DependentUpon>HotelsScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RoomsScreen.resx">
       <DependentUpon>RoomsScreen.cs</DependentUpon>

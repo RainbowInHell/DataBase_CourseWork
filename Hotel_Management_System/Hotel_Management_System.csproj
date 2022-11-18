@@ -117,70 +117,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DashboardScreen.cs">
+    <Compile Include="ControlScreens\AdminHotelsViewScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DashboardScreen.Designer.cs">
+    <Compile Include="ControlScreens\AdminHotelsViewScreen.Designer.cs">
+      <DependentUpon>AdminHotelsViewScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationScreens\BookingsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculationScreens\BookingsScreen.Designer.cs">
+      <DependentUpon>BookingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculationScreens\CheckoutScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculationScreens\CheckoutScreen.Designer.cs">
+      <DependentUpon>CheckoutScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlScreens\DashboardScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlScreens\DashboardScreen.Designer.cs">
       <DependentUpon>DashboardScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepartmentsScreen.cs">
+    <Compile Include="ControlScreens\DepartmentsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepartmentsScreen.Designer.cs">
+    <Compile Include="ControlScreens\DepartmentsScreen.Designer.cs">
       <DependentUpon>DepartmentsScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="DiscountScreen.cs">
+    <Compile Include="CalculationScreens\DiscountScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DiscountScreen.Designer.cs">
+    <Compile Include="CalculationScreens\DiscountScreen.Designer.cs">
       <DependentUpon>DiscountScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeesScreen.cs">
+    <Compile Include="ControlScreens\EmployeesScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeesScreen.Designer.cs">
+    <Compile Include="ControlScreens\EmployeesScreen.Designer.cs">
       <DependentUpon>EmployeesScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuestsScreen.cs">
+    <Compile Include="ControlScreens\GuestsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuestsScreen.Designer.cs">
+    <Compile Include="ControlScreens\GuestsScreen.Designer.cs">
       <DependentUpon>GuestsScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="HotelIntroScreen.cs">
+    <Compile Include="ControlScreens\HotelIntroScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HotelIntroScreen.Designer.cs">
+    <Compile Include="ControlScreens\HotelIntroScreen.Designer.cs">
       <DependentUpon>HotelIntroScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="HotelsScreen.cs">
+    <Compile Include="ControlScreens\HotelsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HotelsScreen.Designer.cs">
+    <Compile Include="ControlScreens\HotelsScreen.Designer.cs">
       <DependentUpon>HotelsScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="RoomsScreen.cs">
+    <Compile Include="RoomScreens\RoomsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RoomsScreen.Designer.cs">
+    <Compile Include="RoomScreens\RoomsScreen.Designer.cs">
       <DependentUpon>RoomsScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="RoomTypeScreen.cs">
+    <Compile Include="RoomScreens\RoomTypeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RoomTypeScreen.Designer.cs">
+    <Compile Include="RoomScreens\RoomTypeScreen.Designer.cs">
       <DependentUpon>RoomTypeScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ServicesScreen.cs">
+    <Compile Include="ControlScreens\ServicesScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ServicesScreen.Designer.cs">
+    <Compile Include="ControlScreens\ServicesScreen.Designer.cs">
       <DependentUpon>ServicesScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ShowDefaultScreen.cs">
+    <Compile Include="ControlScreens\ShowDefaultScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ShowDefaultScreen.Designer.cs">
+    <Compile Include="ControlScreens\ShowDefaultScreen.Designer.cs">
       <DependentUpon>ShowDefaultScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="StartScreens\SuperAdminLoginScreen.cs">
@@ -218,37 +236,46 @@
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StaticClasses\Statics.cs" />
-    <EmbeddedResource Include="DashboardScreen.resx">
+    <EmbeddedResource Include="ControlScreens\AdminHotelsViewScreen.resx">
+      <DependentUpon>AdminHotelsViewScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculationScreens\BookingsScreen.resx">
+      <DependentUpon>BookingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculationScreens\CheckoutScreen.resx">
+      <DependentUpon>CheckoutScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlScreens\DashboardScreen.resx">
       <DependentUpon>DashboardScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DepartmentsScreen.resx">
+    <EmbeddedResource Include="ControlScreens\DepartmentsScreen.resx">
       <DependentUpon>DepartmentsScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DiscountScreen.resx">
+    <EmbeddedResource Include="CalculationScreens\DiscountScreen.resx">
       <DependentUpon>DiscountScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeesScreen.resx">
+    <EmbeddedResource Include="ControlScreens\EmployeesScreen.resx">
       <DependentUpon>EmployeesScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuestsScreen.resx">
+    <EmbeddedResource Include="ControlScreens\GuestsScreen.resx">
       <DependentUpon>GuestsScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HotelIntroScreen.resx">
+    <EmbeddedResource Include="ControlScreens\HotelIntroScreen.resx">
       <DependentUpon>HotelIntroScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HotelsScreen.resx">
+    <EmbeddedResource Include="ControlScreens\HotelsScreen.resx">
       <DependentUpon>HotelsScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomsScreen.resx">
+    <EmbeddedResource Include="RoomScreens\RoomsScreen.resx">
       <DependentUpon>RoomsScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomTypeScreen.resx">
+    <EmbeddedResource Include="RoomScreens\RoomTypeScreen.resx">
       <DependentUpon>RoomTypeScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ServicesScreen.resx">
+    <EmbeddedResource Include="ControlScreens\ServicesScreen.resx">
       <DependentUpon>ServicesScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ShowDefaultScreen.resx">
+    <EmbeddedResource Include="ControlScreens\ShowDefaultScreen.resx">
       <DependentUpon>ShowDefaultScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartScreens\CreatePasswordScreen.resx">

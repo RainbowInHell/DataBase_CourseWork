@@ -36,13 +36,13 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.usernameTextField = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ImageRadioButton1 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.enterButton = new Guna.UI2.WinForms.Guna2Button();
             this.errorLabel = new System.Windows.Forms.Label();
             this.passwordTextField = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.toAdminLoginButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label3 = new System.Windows.Forms.Label();
+            this.forgetPasswordLabel = new System.Windows.Forms.Label();
+            this.closeButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -135,35 +135,20 @@
             this.usernameTextField.TabIndex = 3;
             this.usernameTextField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2Button1
+            // enterButton
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(608, 417);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(240, 55);
-            this.guna2Button1.TabIndex = 5;
-            this.guna2Button1.Text = "ВХОД";
-            // 
-            // guna2ImageRadioButton1
-            // 
-            this.guna2ImageRadioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageRadioButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.BackgroundImage")));
-            this.guna2ImageRadioButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2ImageRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageRadioButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.Image")));
-            this.guna2ImageRadioButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageRadioButton1.ImageRotate = 0F;
-            this.guna2ImageRadioButton1.Location = new System.Drawing.Point(1019, 14);
-            this.guna2ImageRadioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ImageRadioButton1.Name = "guna2ImageRadioButton1";
-            this.guna2ImageRadioButton1.Size = new System.Drawing.Size(32, 30);
-            this.guna2ImageRadioButton1.TabIndex = 6;
+            this.enterButton.BackColor = System.Drawing.Color.Transparent;
+            this.enterButton.BorderColor = System.Drawing.Color.Transparent;
+            this.enterButton.BorderRadius = 20;
+            this.enterButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.enterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterButton.ForeColor = System.Drawing.Color.White;
+            this.enterButton.Location = new System.Drawing.Point(608, 417);
+            this.enterButton.Margin = new System.Windows.Forms.Padding(4);
+            this.enterButton.Name = "enterButton";
+            this.enterButton.Size = new System.Drawing.Size(240, 55);
+            this.enterButton.TabIndex = 5;
+            this.enterButton.Text = "ВХОД";
             // 
             // errorLabel
             // 
@@ -205,20 +190,20 @@
             this.passwordTextField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.passwordTextField.UseSystemPasswordChar = true;
             // 
-            // guna2CircleButton1
+            // toAdminLoginButton
             // 
-            this.guna2CircleButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.BackgroundImage")));
-            this.guna2CircleButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2CircleButton1.BorderThickness = 2;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(969, 463);
-            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(81, 76);
-            this.guna2CircleButton1.TabIndex = 9;
+            this.toAdminLoginButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("toAdminLoginButton.BackgroundImage")));
+            this.toAdminLoginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.toAdminLoginButton.BorderThickness = 2;
+            this.toAdminLoginButton.FillColor = System.Drawing.Color.Transparent;
+            this.toAdminLoginButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toAdminLoginButton.ForeColor = System.Drawing.Color.White;
+            this.toAdminLoginButton.Location = new System.Drawing.Point(969, 463);
+            this.toAdminLoginButton.Margin = new System.Windows.Forms.Padding(4);
+            this.toAdminLoginButton.Name = "toAdminLoginButton";
+            this.toAdminLoginButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.toAdminLoginButton.Size = new System.Drawing.Size(81, 76);
+            this.toAdminLoginButton.TabIndex = 9;
             // 
             // imageList1
             // 
@@ -226,29 +211,44 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // label3
+            // forgetPasswordLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label3.Location = new System.Drawing.Point(671, 375);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 18);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Забыли пароль?";
+            this.forgetPasswordLabel.AutoSize = true;
+            this.forgetPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forgetPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.forgetPasswordLabel.Location = new System.Drawing.Point(671, 375);
+            this.forgetPasswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.forgetPasswordLabel.Name = "forgetPasswordLabel";
+            this.forgetPasswordLabel.Size = new System.Drawing.Size(125, 18);
+            this.forgetPasswordLabel.TabIndex = 10;
+            this.forgetPasswordLabel.Text = "Забыли пароль?";
+            // 
+            // closeButton
+            // 
+            this.closeButton.BorderColor = System.Drawing.Color.Transparent;
+            this.closeButton.BorderThickness = 2;
+            this.closeButton.FillColor = System.Drawing.Color.Transparent;
+            this.closeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.closeButton.ForeColor = System.Drawing.Color.White;
+            this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
+            this.closeButton.Location = new System.Drawing.Point(1021, 13);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.closeButton.Size = new System.Drawing.Size(33, 32);
+            this.closeButton.TabIndex = 95;
             // 
             // UserLoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2CircleButton1);
+            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.forgetPasswordLabel);
+            this.Controls.Add(this.toAdminLoginButton);
             this.Controls.Add(this.passwordTextField);
             this.Controls.Add(this.errorLabel);
-            this.Controls.Add(this.guna2ImageRadioButton1);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.enterButton);
             this.Controls.Add(this.usernameTextField);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2CirclePictureBox1);
@@ -273,12 +273,12 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox usernameTextField;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton1;
+        private Guna.UI2.WinForms.Guna2Button enterButton;
         private System.Windows.Forms.Label errorLabel;
         private Guna.UI2.WinForms.Guna2TextBox passwordTextField;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Guna.UI2.WinForms.Guna2CircleButton toAdminLoginButton;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label forgetPasswordLabel;
+        private Guna.UI2.WinForms.Guna2CircleButton closeButton;
     }
 }

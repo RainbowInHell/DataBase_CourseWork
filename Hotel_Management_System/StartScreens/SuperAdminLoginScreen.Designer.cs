@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuperAdminLoginScreen));
             this.passwordTextField = new Guna.UI2.WinForms.Guna2TextBox();
             this.errorLabel = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.enterButton = new Guna.UI2.WinForms.Guna2Button();
             this.usernameTextField = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.backBtn = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.returnBackButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,20 +82,20 @@
             this.errorLabel.Text = "Неверный логин или пароль";
             this.errorLabel.Visible = false;
             // 
-            // guna2Button1
+            // enterButton
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(625, 379);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(240, 55);
-            this.guna2Button1.TabIndex = 11;
-            this.guna2Button1.Text = "ВОЙТИ";
+            this.enterButton.BackColor = System.Drawing.Color.Transparent;
+            this.enterButton.BorderColor = System.Drawing.Color.Transparent;
+            this.enterButton.BorderRadius = 20;
+            this.enterButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.enterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterButton.ForeColor = System.Drawing.Color.White;
+            this.enterButton.Location = new System.Drawing.Point(625, 379);
+            this.enterButton.Margin = new System.Windows.Forms.Padding(4);
+            this.enterButton.Name = "enterButton";
+            this.enterButton.Size = new System.Drawing.Size(240, 55);
+            this.enterButton.TabIndex = 11;
+            this.enterButton.Text = "ВОЙТИ";
             // 
             // usernameTextField
             // 
@@ -157,7 +157,7 @@
             this.label3.Size = new System.Drawing.Size(327, 181);
             this.label3.TabIndex = 15;
             this.label3.Text = "Мы предоставляем наиболее управляемую и безопасную систему для улучшения качества" +
-    " вашего ОТЕЛЯ.";
+    " вашего отеля.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -169,9 +169,9 @@
             this.label1.Location = new System.Drawing.Point(138, 179);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 39);
+            this.label1.Size = new System.Drawing.Size(125, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "О НАС?";
+            this.label1.Text = "О НАС";
             // 
             // guna2Panel1
             // 
@@ -183,31 +183,31 @@
             this.guna2Panel1.Size = new System.Drawing.Size(109, 98);
             this.guna2Panel1.TabIndex = 15;
             // 
-            // backBtn
+            // returnBackButton
             // 
-            this.backBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backBtn.BackgroundImage")));
-            this.backBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.backBtn.FillColor = System.Drawing.Color.Transparent;
-            this.backBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.backBtn.ForeColor = System.Drawing.Color.White;
-            this.backBtn.Location = new System.Drawing.Point(1007, 4);
-            this.backBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.backBtn.Size = new System.Drawing.Size(60, 58);
-            this.backBtn.TabIndex = 16;
+            this.returnBackButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("returnBackButton.BackgroundImage")));
+            this.returnBackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.returnBackButton.FillColor = System.Drawing.Color.Transparent;
+            this.returnBackButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.returnBackButton.ForeColor = System.Drawing.Color.White;
+            this.returnBackButton.Location = new System.Drawing.Point(1007, 4);
+            this.returnBackButton.Margin = new System.Windows.Forms.Padding(4);
+            this.returnBackButton.Name = "returnBackButton";
+            this.returnBackButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.returnBackButton.Size = new System.Drawing.Size(60, 58);
+            this.returnBackButton.TabIndex = 16;
             // 
             // SuperAdminLoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.backBtn);
+            this.Controls.Add(this.returnBackButton);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.passwordTextField);
             this.Controls.Add(this.errorLabel);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.enterButton);
             this.Controls.Add(this.usernameTextField);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -226,13 +226,13 @@
 
         private Guna.UI2.WinForms.Guna2TextBox passwordTextField;
         private System.Windows.Forms.Label errorLabel;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button enterButton;
         private Guna.UI2.WinForms.Guna2TextBox usernameTextField;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2CircleButton backBtn;
+        private Guna.UI2.WinForms.Guna2CircleButton returnBackButton;
     }
 }

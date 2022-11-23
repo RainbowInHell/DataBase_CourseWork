@@ -35,13 +35,13 @@
             this.answerField = new Guna.UI2.WinForms.Guna2TextBox();
             this.secQCMBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.verifyBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.verifyButton = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.confirmPassField = new Guna.UI2.WinForms.Guna2TextBox();
             this.newPassField = new Guna.UI2.WinForms.Guna2TextBox();
-            this.changeBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ImageRadioButton1 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.changePasswordButton = new Guna.UI2.WinForms.Guna2Button();
+            this.closeButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.SuspendLayout();
             // 
             // guna2CircleButton1
@@ -142,20 +142,20 @@
             this.label10.TabIndex = 100;
             this.label10.Text = "Выберите вопрос";
             // 
-            // verifyBtn
+            // verifyButton
             // 
-            this.verifyBtn.BackColor = System.Drawing.Color.Transparent;
-            this.verifyBtn.BorderColor = System.Drawing.Color.Transparent;
-            this.verifyBtn.BorderRadius = 25;
-            this.verifyBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.verifyBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.verifyBtn.ForeColor = System.Drawing.Color.White;
-            this.verifyBtn.Location = new System.Drawing.Point(413, 268);
-            this.verifyBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.verifyBtn.Name = "verifyBtn";
-            this.verifyBtn.Size = new System.Drawing.Size(240, 55);
-            this.verifyBtn.TabIndex = 104;
-            this.verifyBtn.Text = "Подтвердить";
+            this.verifyButton.BackColor = System.Drawing.Color.Transparent;
+            this.verifyButton.BorderColor = System.Drawing.Color.Transparent;
+            this.verifyButton.BorderRadius = 25;
+            this.verifyButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.verifyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.verifyButton.ForeColor = System.Drawing.Color.White;
+            this.verifyButton.Location = new System.Drawing.Point(413, 268);
+            this.verifyButton.Margin = new System.Windows.Forms.Padding(4);
+            this.verifyButton.Name = "verifyButton";
+            this.verifyButton.Size = new System.Drawing.Size(240, 55);
+            this.verifyButton.TabIndex = 104;
+            this.verifyButton.Text = "Подтвердить";
             // 
             // label4
             // 
@@ -235,47 +235,48 @@
             this.newPassField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.newPassField.UseSystemPasswordChar = true;
             // 
-            // changeBtn
+            // changePasswordButton
             // 
-            this.changeBtn.BackColor = System.Drawing.Color.Transparent;
-            this.changeBtn.BorderColor = System.Drawing.Color.Transparent;
-            this.changeBtn.BorderRadius = 25;
-            this.changeBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.changeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changeBtn.ForeColor = System.Drawing.Color.White;
-            this.changeBtn.Location = new System.Drawing.Point(423, 464);
-            this.changeBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.changeBtn.Name = "changeBtn";
-            this.changeBtn.Size = new System.Drawing.Size(240, 55);
-            this.changeBtn.TabIndex = 109;
-            this.changeBtn.Text = "Поменять пароль";
+            this.changePasswordButton.BackColor = System.Drawing.Color.Transparent;
+            this.changePasswordButton.BorderColor = System.Drawing.Color.Transparent;
+            this.changePasswordButton.BorderRadius = 25;
+            this.changePasswordButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.changePasswordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changePasswordButton.ForeColor = System.Drawing.Color.White;
+            this.changePasswordButton.Location = new System.Drawing.Point(423, 464);
+            this.changePasswordButton.Margin = new System.Windows.Forms.Padding(4);
+            this.changePasswordButton.Name = "changePasswordButton";
+            this.changePasswordButton.Size = new System.Drawing.Size(240, 55);
+            this.changePasswordButton.TabIndex = 109;
+            this.changePasswordButton.Text = "Поменять пароль";
             // 
-            // guna2ImageRadioButton1
+            // closeButton
             // 
-            this.guna2ImageRadioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageRadioButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2ImageRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageRadioButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageRadioButton1.Image")));
-            this.guna2ImageRadioButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageRadioButton1.ImageRotate = 0F;
-            this.guna2ImageRadioButton1.Location = new System.Drawing.Point(1019, 15);
-            this.guna2ImageRadioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ImageRadioButton1.Name = "guna2ImageRadioButton1";
-            this.guna2ImageRadioButton1.Size = new System.Drawing.Size(32, 30);
-            this.guna2ImageRadioButton1.TabIndex = 110;
+            this.closeButton.BorderColor = System.Drawing.Color.Transparent;
+            this.closeButton.BorderThickness = 2;
+            this.closeButton.FillColor = System.Drawing.Color.Transparent;
+            this.closeButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.closeButton.ForeColor = System.Drawing.Color.White;
+            this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
+            this.closeButton.Location = new System.Drawing.Point(1021, 13);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.closeButton.Size = new System.Drawing.Size(33, 32);
+            this.closeButton.TabIndex = 110;
             // 
             // ResetPasswordScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.guna2ImageRadioButton1);
-            this.Controls.Add(this.changeBtn);
+            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.changePasswordButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.confirmPassField);
             this.Controls.Add(this.newPassField);
-            this.Controls.Add(this.verifyBtn);
+            this.Controls.Add(this.verifyButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.answerField);
             this.Controls.Add(this.secQCMBox);
@@ -300,12 +301,12 @@
         private Guna.UI2.WinForms.Guna2TextBox answerField;
         private Guna.UI2.WinForms.Guna2ComboBox secQCMBox;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2Button verifyBtn;
+        private Guna.UI2.WinForms.Guna2Button verifyButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox confirmPassField;
         private Guna.UI2.WinForms.Guna2TextBox newPassField;
-        private Guna.UI2.WinForms.Guna2Button changeBtn;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton1;
+        private Guna.UI2.WinForms.Guna2Button changePasswordButton;
+        private Guna.UI2.WinForms.Guna2CircleButton closeButton;
     }
 }

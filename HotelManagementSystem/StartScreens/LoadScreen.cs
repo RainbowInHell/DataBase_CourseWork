@@ -1,14 +1,10 @@
-﻿using System;
-using System.IO;
-using System.Reflection;
-using System.Windows.Forms;
-
-namespace Hotel_Management_System
+namespace HotelManagementSystem
 {
     public partial class LoadScreen : Form
     {
         public LoadScreen()
         {
+            InitializeComponent();
             InitializeComponent();
             closeTimer.Interval = 5000;
             closeTimer.Tick += new EventHandler(closeTimer_Tick);
@@ -19,6 +15,8 @@ namespace Hotel_Management_System
         {
             closeTimer.Stop();
             this.Hide();
+            //Login l = new Login();
+            //l.Show();
         }
     }
 }

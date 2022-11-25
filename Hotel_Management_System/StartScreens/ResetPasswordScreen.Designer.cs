@@ -38,7 +38,7 @@
             this.verifyButton = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.confirmPassField = new Guna.UI2.WinForms.Guna2TextBox();
+            this.confirmNewPassField = new Guna.UI2.WinForms.Guna2TextBox();
             this.newPassField = new Guna.UI2.WinForms.Guna2TextBox();
             this.changePasswordButton = new Guna.UI2.WinForms.Guna2Button();
             this.closeButton = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -181,32 +181,32 @@
             this.label3.TabIndex = 107;
             this.label3.Text = "Новый пароль";
             // 
-            // confirmPassField
+            // confirmNewPassField
             // 
-            this.confirmPassField.BackColor = System.Drawing.Color.Transparent;
-            this.confirmPassField.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.confirmPassField.BorderRadius = 20;
-            this.confirmPassField.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.confirmPassField.DefaultText = "";
-            this.confirmPassField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.confirmPassField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.confirmPassField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.confirmPassField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.confirmPassField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.confirmPassField.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmPassField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.confirmPassField.IconLeft = ((System.Drawing.Image)(resources.GetObject("confirmPassField.IconLeft")));
-            this.confirmPassField.IconRight = ((System.Drawing.Image)(resources.GetObject("confirmPassField.IconRight")));
-            this.confirmPassField.Location = new System.Drawing.Point(507, 406);
-            this.confirmPassField.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.confirmPassField.Name = "confirmPassField";
-            this.confirmPassField.PasswordChar = '●';
-            this.confirmPassField.PlaceholderText = "";
-            this.confirmPassField.SelectedText = "";
-            this.confirmPassField.Size = new System.Drawing.Size(291, 48);
-            this.confirmPassField.TabIndex = 106;
-            this.confirmPassField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.confirmPassField.UseSystemPasswordChar = true;
+            this.confirmNewPassField.BackColor = System.Drawing.Color.Transparent;
+            this.confirmNewPassField.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.confirmNewPassField.BorderRadius = 20;
+            this.confirmNewPassField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.confirmNewPassField.DefaultText = "";
+            this.confirmNewPassField.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.confirmNewPassField.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.confirmNewPassField.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.confirmNewPassField.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.confirmNewPassField.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.confirmNewPassField.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmNewPassField.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.confirmNewPassField.IconLeft = ((System.Drawing.Image)(resources.GetObject("confirmNewPassField.IconLeft")));
+            this.confirmNewPassField.IconRight = ((System.Drawing.Image)(resources.GetObject("confirmNewPassField.IconRight")));
+            this.confirmNewPassField.Location = new System.Drawing.Point(507, 406);
+            this.confirmNewPassField.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.confirmNewPassField.Name = "confirmNewPassField";
+            this.confirmNewPassField.PasswordChar = '●';
+            this.confirmNewPassField.PlaceholderText = "";
+            this.confirmNewPassField.SelectedText = "";
+            this.confirmNewPassField.Size = new System.Drawing.Size(291, 48);
+            this.confirmNewPassField.TabIndex = 106;
+            this.confirmNewPassField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.confirmNewPassField.UseSystemPasswordChar = true;
             // 
             // newPassField
             // 
@@ -274,7 +274,7 @@
             this.Controls.Add(this.changePasswordButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.confirmPassField);
+            this.Controls.Add(this.confirmNewPassField);
             this.Controls.Add(this.newPassField);
             this.Controls.Add(this.verifyButton);
             this.Controls.Add(this.label1);
@@ -304,7 +304,7 @@
         private Guna.UI2.WinForms.Guna2Button verifyButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox confirmPassField;
+        private Guna.UI2.WinForms.Guna2TextBox confirmNewPassField;
         private Guna.UI2.WinForms.Guna2TextBox newPassField;
         private Guna.UI2.WinForms.Guna2Button changePasswordButton;
         private Guna.UI2.WinForms.Guna2CircleButton closeButton;

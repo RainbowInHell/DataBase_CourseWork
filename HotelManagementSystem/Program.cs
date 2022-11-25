@@ -1,3 +1,5 @@
+using HotelManagementSystem.StartScreens;
+
 namespace HotelManagementSystem
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace HotelManagementSystem
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new LoadScreen());
+            Application.Run(new SuperAdminLoginScreen());
         }
     }
 }

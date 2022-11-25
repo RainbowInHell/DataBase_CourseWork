@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Management_System", "Hotel_Management_System\Hotel_Management_System.csproj", "{4A0DE012-C8E8-4CD9-8790-EC5303CABDC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelManagementSystem", "HotelManagementSystem\HotelManagementSystem.csproj", "{A153C11F-1CA9-4AC5-A010-4C6495AA94F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelManagementSystem", "HotelManagementSystem\HotelManagementSystem.csproj", "{A153C11F-1CA9-4AC5-A010-4C6495AA94F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -127,10 +127,10 @@
             this.clearButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.clearButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.clearButton.Location = new System.Drawing.Point(807, 439);
+            this.clearButton.Location = new System.Drawing.Point(783, 448);
             this.clearButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(125, 46);
+            this.clearButton.Size = new System.Drawing.Size(140, 55);
             this.clearButton.TabIndex = 105;
             this.clearButton.Text = "ОЧИСТИТЬ";
             // 
@@ -142,10 +142,10 @@
             this.updateButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.updateButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.updateButton.Location = new System.Drawing.Point(940, 383);
+            this.updateButton.Location = new System.Drawing.Point(931, 383);
             this.updateButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(125, 46);
+            this.updateButton.Size = new System.Drawing.Size(140, 55);
             this.updateButton.TabIndex = 104;
             this.updateButton.Text = "ОБНОВИТЬ";
             // 
@@ -157,10 +157,10 @@
             this.deleteButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.deleteButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.deleteButton.Location = new System.Drawing.Point(940, 439);
+            this.deleteButton.Location = new System.Drawing.Point(931, 448);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(125, 46);
+            this.deleteButton.Size = new System.Drawing.Size(140, 55);
             this.deleteButton.TabIndex = 103;
             this.deleteButton.Text = "УДАЛИТЬ";
             // 
@@ -172,10 +172,10 @@
             this.addButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.addButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.addButton.Location = new System.Drawing.Point(807, 383);
+            this.addButton.Location = new System.Drawing.Point(783, 383);
             this.addButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(125, 46);
+            this.addButton.Size = new System.Drawing.Size(140, 55);
             this.addButton.TabIndex = 102;
             this.addButton.Text = "ДОБАВИТЬ";
             // 
@@ -184,7 +184,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label2.Location = new System.Drawing.Point(748, 221);
+            this.label2.Location = new System.Drawing.Point(734, 221);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 25);
@@ -196,7 +196,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label4.Location = new System.Drawing.Point(748, 147);
+            this.label4.Location = new System.Drawing.Point(734, 147);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(274, 25);
@@ -210,7 +210,7 @@
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.Image")));
-            this.guna2CircleButton1.Location = new System.Drawing.Point(909, 56);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(896, 86);
             this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -222,7 +222,7 @@
             this.departmentId.AutoSize = true;
             this.departmentId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.departmentId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.departmentId.Location = new System.Drawing.Point(748, 74);
+            this.departmentId.Location = new System.Drawing.Point(735, 74);
             this.departmentId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.departmentId.Name = "departmentId";
             this.departmentId.Size = new System.Drawing.Size(153, 25);
@@ -248,7 +248,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label5.Location = new System.Drawing.Point(748, 288);
+            this.label5.Location = new System.Drawing.Point(730, 288);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(184, 25);
@@ -280,7 +280,7 @@
             this.smokeCMBox.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.smokeCMBox.Location = new System.Drawing.Point(748, 318);
+            this.smokeCMBox.Location = new System.Drawing.Point(734, 318);
             this.smokeCMBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.smokeCMBox.Name = "smokeCMBox";
             this.smokeCMBox.Size = new System.Drawing.Size(180, 36);
@@ -309,26 +309,23 @@
             // 
             // typeIdField
             // 
-            this.typeIdField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.typeIdField.Location = new System.Drawing.Point(748, 102);
+            this.typeIdField.Location = new System.Drawing.Point(734, 102);
             this.typeIdField.Name = "typeIdField";
-            this.typeIdField.Size = new System.Drawing.Size(153, 20);
+            this.typeIdField.Size = new System.Drawing.Size(153, 27);
             this.typeIdField.TabIndex = 113;
             // 
             // typeNameField
             // 
-            this.typeNameField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.typeNameField.Location = new System.Drawing.Point(748, 175);
+            this.typeNameField.Location = new System.Drawing.Point(734, 175);
             this.typeNameField.Name = "typeNameField";
-            this.typeNameField.Size = new System.Drawing.Size(274, 20);
+            this.typeNameField.Size = new System.Drawing.Size(274, 27);
             this.typeNameField.TabIndex = 114;
             // 
             // typeCostField
             // 
-            this.typeCostField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.typeCostField.Location = new System.Drawing.Point(748, 249);
+            this.typeCostField.Location = new System.Drawing.Point(734, 249);
             this.typeCostField.Name = "typeCostField";
-            this.typeCostField.Size = new System.Drawing.Size(58, 20);
+            this.typeCostField.Size = new System.Drawing.Size(58, 27);
             this.typeCostField.TabIndex = 115;
             // 
             // RoomTypeScreen

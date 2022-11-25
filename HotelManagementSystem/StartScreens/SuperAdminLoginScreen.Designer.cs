@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.returnBackButton = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.adminTextField = new Testing.RoundTextBox();
+            this.adminLoginField = new Testing.RoundTextBox();
             this.adminPasswordField = new Testing.RoundTextBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,7 @@
             this.enterButton.Size = new System.Drawing.Size(240, 55);
             this.enterButton.TabIndex = 11;
             this.enterButton.Text = "ВОЙТИ";
+            this.enterButton.Click += new System.EventHandler(this.enterButton_Click);
             // 
             // label2
             // 
@@ -145,25 +146,25 @@
             this.returnBackButton.Size = new System.Drawing.Size(60, 58);
             this.returnBackButton.TabIndex = 16;
             // 
-            // adminTextField
+            // adminLoginField
             // 
-            this.adminTextField.BorderColor = System.Drawing.Color.Black;
-            this.adminTextField.BorderFocusColor = System.Drawing.Color.Black;
-            this.adminTextField.BorderRadius = 15;
-            this.adminTextField.BorderSize = 1;
-            this.adminTextField.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.adminTextField.Location = new System.Drawing.Point(648, 228);
-            this.adminTextField.Margin = new System.Windows.Forms.Padding(4);
-            this.adminTextField.Multiline = false;
-            this.adminTextField.Name = "adminTextField";
-            this.adminTextField.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.adminTextField.PasswordChar = false;
-            this.adminTextField.PlaceholderColor = System.Drawing.Color.DimGray;
-            this.adminTextField.PlaceholderText = "Логин";
-            this.adminTextField.Size = new System.Drawing.Size(198, 33);
-            this.adminTextField.TabIndex = 99;
-            this.adminTextField.Texts = "";
-            this.adminTextField.UnderlinedStyle = false;
+            this.adminLoginField.BorderColor = System.Drawing.Color.Black;
+            this.adminLoginField.BorderFocusColor = System.Drawing.Color.Black;
+            this.adminLoginField.BorderRadius = 15;
+            this.adminLoginField.BorderSize = 1;
+            this.adminLoginField.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.adminLoginField.Location = new System.Drawing.Point(648, 228);
+            this.adminLoginField.Margin = new System.Windows.Forms.Padding(4);
+            this.adminLoginField.Multiline = false;
+            this.adminLoginField.Name = "adminLoginField";
+            this.adminLoginField.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.adminLoginField.PasswordChar = false;
+            this.adminLoginField.PlaceholderColor = System.Drawing.Color.DimGray;
+            this.adminLoginField.PlaceholderText = "Логин";
+            this.adminLoginField.Size = new System.Drawing.Size(198, 33);
+            this.adminLoginField.TabIndex = 99;
+            this.adminLoginField.Texts = "";
+            this.adminLoginField.UnderlinedStyle = false;
             // 
             // adminPasswordField
             // 
@@ -192,7 +193,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.adminPasswordField);
-            this.Controls.Add(this.adminTextField);
+            this.Controls.Add(this.adminLoginField);
             this.Controls.Add(this.returnBackButton);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2GradientPanel1);
@@ -221,7 +222,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2CircleButton returnBackButton;
-        private Testing.RoundTextBox adminTextField;
+        private Testing.RoundTextBox adminLoginField;
         private Testing.RoundTextBox adminPasswordField;
     }
 }

@@ -16,5 +16,13 @@ namespace HotelManagementSystem.StartScreens
         {
             InitializeComponent();
         }
+
+        private void toAdminLoginButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            SuperAdminLoginScreen superAdminLoginScreen = new SuperAdminLoginScreen();
+            superAdminLoginScreen.Show();
+        }
     }
 }

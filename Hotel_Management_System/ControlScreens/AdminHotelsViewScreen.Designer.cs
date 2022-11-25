@@ -705,6 +705,7 @@
         }
 
         #endregion
+
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
         private Guna.UI2.WinForms.Guna2TextBox emailField;
         private System.Windows.Forms.Label label32;

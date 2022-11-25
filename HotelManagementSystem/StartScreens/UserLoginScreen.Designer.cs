@@ -152,6 +152,7 @@
             this.toAdminLoginButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.toAdminLoginButton.Size = new System.Drawing.Size(81, 76);
             this.toAdminLoginButton.TabIndex = 9;
+            this.toAdminLoginButton.Click += new System.EventHandler(this.toAdminLoginButton_Click);
             // 
             // imageList1
             // 

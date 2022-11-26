@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelManagementSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,16 @@ namespace HotelManagementSystem.ControlScreens
 {
     public partial class EmployeesScreen : Form
     {
+        private HotelDbContext? _context;
+
         public EmployeesScreen()
         {
             InitializeComponent();
+        }
+
+        public EmployeesScreen(HotelDbContext _context) : this()
+        {
+            this._context = _context;
         }
     }
 }

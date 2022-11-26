@@ -145,6 +145,7 @@
             this.returnBackButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.returnBackButton.Size = new System.Drawing.Size(60, 58);
             this.returnBackButton.TabIndex = 16;
+            this.returnBackButton.Click += new System.EventHandler(this.returnBackButton_Click);
             // 
             // adminLoginField
             // 

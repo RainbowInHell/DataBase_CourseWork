@@ -186,6 +186,7 @@
             this.closeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.closeButton.Size = new System.Drawing.Size(33, 32);
             this.closeButton.TabIndex = 95;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // usernameTextField
             // 

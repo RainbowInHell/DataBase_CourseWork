@@ -46,7 +46,7 @@
             this.mainPanel.Location = new System.Drawing.Point(47, 103);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1511, 726);
+            this.mainPanel.Size = new System.Drawing.Size(1511, 700);
             this.mainPanel.TabIndex = 0;
             // 
             // guna2Panel2
@@ -76,6 +76,7 @@
             this.employessButton.Size = new System.Drawing.Size(188, 54);
             this.employessButton.TabIndex = 4;
             this.employessButton.Text = "Работники";
+            this.employessButton.Click += new System.EventHandler(this.employessButton_Click);
             // 
             // hotelsButton
             // 
@@ -94,6 +95,7 @@
             this.hotelsButton.Size = new System.Drawing.Size(173, 54);
             this.hotelsButton.TabIndex = 2;
             this.hotelsButton.Text = "Отели";
+            this.hotelsButton.Click += new System.EventHandler(this.hotelsButton_Click);
             // 
             // closeButton
             // 
@@ -107,15 +109,16 @@
             this.closeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.closeButton.Name = "closeButton";
             this.closeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.closeButton.Size = new System.Drawing.Size(33, 40);
+            this.closeButton.Size = new System.Drawing.Size(33, 32);
             this.closeButton.TabIndex = 94;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.ClientSize = new System.Drawing.Size(1652, 800);
+            this.ClientSize = new System.Drawing.Size(1652, 826);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.mainPanel);

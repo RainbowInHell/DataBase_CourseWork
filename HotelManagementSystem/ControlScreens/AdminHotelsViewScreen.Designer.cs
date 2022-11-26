@@ -41,9 +41,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.hotelWebSiteField = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.searchHotelByIdButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,8 +53,8 @@
             this.hotelIdField = new System.Windows.Forms.TextBox();
             this.hotelNameField = new System.Windows.Forms.TextBox();
             this.hotelContactNumberField = new System.Windows.Forms.TextBox();
-            this.hoteEmaildField = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.hotelEmaildField = new System.Windows.Forms.TextBox();
+            this.hotelWebSiteField = new System.Windows.Forms.TextBox();
             this.hotelDescriptionField = new System.Windows.Forms.TextBox();
             this.hotelFloorsCountField = new System.Windows.Forms.TextBox();
             this.hotelCityField = new System.Windows.Forms.TextBox();
@@ -63,6 +62,7 @@
             this.hotelAdresField = new System.Windows.Forms.TextBox();
             this.hotelCountryField = new System.Windows.Forms.TextBox();
             this.hotelZipCodeField = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.hotelsTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -216,18 +216,6 @@
             this.label6.TabIndex = 92;
             this.label6.Text = "Количество этажей";
             // 
-            // hotelWebSiteField
-            // 
-            this.hotelWebSiteField.AutoSize = true;
-            this.hotelWebSiteField.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.hotelWebSiteField.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.hotelWebSiteField.Location = new System.Drawing.Point(1205, 225);
-            this.hotelWebSiteField.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.hotelWebSiteField.Name = "hotelWebSiteField";
-            this.hotelWebSiteField.Size = new System.Drawing.Size(96, 25);
-            this.hotelWebSiteField.TabIndex = 90;
-            this.hotelWebSiteField.Text = "Веб-сайт";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -240,19 +228,20 @@
             this.label3.TabIndex = 88;
             this.label3.Text = "Контактный номер";
             // 
-            // guna2CircleButton1
+            // searchHotelByIdButton
             // 
-            this.guna2CircleButton1.BorderThickness = 2;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.Image")));
-            this.guna2CircleButton1.Location = new System.Drawing.Point(1158, 92);
-            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(53, 43);
-            this.guna2CircleButton1.TabIndex = 87;
+            this.searchHotelByIdButton.BorderThickness = 2;
+            this.searchHotelByIdButton.FillColor = System.Drawing.Color.Transparent;
+            this.searchHotelByIdButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.searchHotelByIdButton.ForeColor = System.Drawing.Color.White;
+            this.searchHotelByIdButton.Image = ((System.Drawing.Image)(resources.GetObject("searchHotelByIdButton.Image")));
+            this.searchHotelByIdButton.Location = new System.Drawing.Point(1158, 92);
+            this.searchHotelByIdButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.searchHotelByIdButton.Name = "searchHotelByIdButton";
+            this.searchHotelByIdButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.searchHotelByIdButton.Size = new System.Drawing.Size(53, 43);
+            this.searchHotelByIdButton.TabIndex = 87;
+            this.searchHotelByIdButton.Click += new System.EventHandler(this.searchHotelByIdButton_Click);
             // 
             // label4
             // 
@@ -304,6 +293,7 @@
             this.clearButton.Size = new System.Drawing.Size(144, 52);
             this.clearButton.TabIndex = 119;
             this.clearButton.Text = "ОЧИСТИТЬ";
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // updateButton
             // 
@@ -319,6 +309,7 @@
             this.updateButton.Size = new System.Drawing.Size(144, 52);
             this.updateButton.TabIndex = 118;
             this.updateButton.Text = "ОБНОВИТЬ";
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // deleteButton
             // 
@@ -334,6 +325,7 @@
             this.deleteButton.Size = new System.Drawing.Size(144, 52);
             this.deleteButton.TabIndex = 117;
             this.deleteButton.Text = "УДАЛИТЬ";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // addButton
             // 
@@ -349,6 +341,7 @@
             this.addButton.Size = new System.Drawing.Size(144, 52);
             this.addButton.TabIndex = 116;
             this.addButton.Text = "ДОБАВИТЬ";
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // hotelIdField
             // 
@@ -371,19 +364,19 @@
             this.hotelContactNumberField.Size = new System.Drawing.Size(192, 27);
             this.hotelContactNumberField.TabIndex = 122;
             // 
-            // hoteEmaildField
+            // hotelEmaildField
             // 
-            this.hoteEmaildField.Location = new System.Drawing.Point(1026, 253);
-            this.hoteEmaildField.Name = "hoteEmaildField";
-            this.hoteEmaildField.Size = new System.Drawing.Size(161, 27);
-            this.hoteEmaildField.TabIndex = 123;
+            this.hotelEmaildField.Location = new System.Drawing.Point(1026, 253);
+            this.hotelEmaildField.Name = "hotelEmaildField";
+            this.hotelEmaildField.Size = new System.Drawing.Size(161, 27);
+            this.hotelEmaildField.TabIndex = 123;
             // 
-            // textBox5
+            // hotelWebSiteField
             // 
-            this.textBox5.Location = new System.Drawing.Point(1205, 253);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(192, 27);
-            this.textBox5.TabIndex = 124;
+            this.hotelWebSiteField.Location = new System.Drawing.Point(1205, 253);
+            this.hotelWebSiteField.Name = "hotelWebSiteField";
+            this.hotelWebSiteField.Size = new System.Drawing.Size(192, 27);
+            this.hotelWebSiteField.TabIndex = 124;
             // 
             // hotelDescriptionField
             // 
@@ -435,11 +428,24 @@
             this.hotelZipCodeField.Size = new System.Drawing.Size(192, 27);
             this.hotelZipCodeField.TabIndex = 131;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.label5.Location = new System.Drawing.Point(1205, 225);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 25);
+            this.label5.TabIndex = 132;
+            this.label5.Text = "Веб-сайт";
+            // 
             // AdminHotelsViewScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1429, 714);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.hotelZipCodeField);
             this.Controls.Add(this.hotelCountryField);
             this.Controls.Add(this.hotelAdresField);
@@ -447,8 +453,8 @@
             this.Controls.Add(this.hotelCityField);
             this.Controls.Add(this.hotelFloorsCountField);
             this.Controls.Add(this.hotelDescriptionField);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.hoteEmaildField);
+            this.Controls.Add(this.hotelWebSiteField);
+            this.Controls.Add(this.hotelEmaildField);
             this.Controls.Add(this.hotelContactNumberField);
             this.Controls.Add(this.hotelNameField);
             this.Controls.Add(this.hotelIdField);
@@ -465,9 +471,8 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.hotelWebSiteField);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2CircleButton1);
+            this.Controls.Add(this.searchHotelByIdButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -493,9 +498,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label hotelWebSiteField;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Guna.UI2.WinForms.Guna2CircleButton searchHotelByIdButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -506,8 +510,8 @@
         private TextBox hotelIdField;
         private TextBox hotelNameField;
         private TextBox hotelContactNumberField;
-        private TextBox hoteEmaildField;
-        private TextBox textBox5;
+        private TextBox hotelEmaildField;
+        private TextBox hotelWebSiteField;
         private TextBox hotelDescriptionField;
         private TextBox hotelFloorsCountField;
         private TextBox hotelCityField;
@@ -515,5 +519,6 @@
         private TextBox hotelAdresField;
         private TextBox hotelCountryField;
         private TextBox hotelZipCodeField;
+        private Label label5;
     }
 }

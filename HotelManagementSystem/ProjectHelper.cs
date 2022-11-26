@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Guna.UI2.WinForms.Suite.Descriptions;
 
 namespace HotelManagementSystem
 {
@@ -12,11 +13,44 @@ namespace HotelManagementSystem
     {
         public enum ScreenFlag { AdminHotelsViewScreenFlag, EmployeesScreenFlag };
 
-        #region FieldsVerifyRegion
+        #region WorkWithFieldsRegion
 
-        public static bool IsAnyOfFieldsNullOrEmpty(params string[] values)
+        public static bool AreAllTextBoxesFilled(params string[] values)
         {
             return values.Any(x => string.IsNullOrEmpty(x)) ? true : false;
+        }
+
+        public static bool AreAllTextBoxesFilled(Control.ControlCollection controlsToCheck)
+        {
+            foreach (Control c in controlsToCheck)
+            {
+                if (c is TextBox)
+                {
+                    TextBox textBox = c as TextBox;
+                    if (string.IsNullOrEmpty(textBox.Text))
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        public static void ClearAllFields(Control.ControlCollection controlsToClear)
+        {
+            Action<Control.ControlCollection> func = null;
+
+            func = (controls) =>
+            {
+                foreach (Control control in controls)
+                    if (control is TextBox)
+                        (control as TextBox).Clear();
+                    else
+                        func(control.Controls);
+            };
+
+            func(controlsToClear);
         }
 
         #endregion

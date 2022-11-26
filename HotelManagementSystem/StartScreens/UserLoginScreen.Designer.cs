@@ -133,9 +133,9 @@
             this.errorLabel.Location = new System.Drawing.Point(586, 485);
             this.errorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(284, 18);
+            this.errorLabel.Size = new System.Drawing.Size(293, 18);
             this.errorLabel.TabIndex = 7;
-            this.errorLabel.Text = "Неверное имя пользователя или парль";
+            this.errorLabel.Text = "Неверное имя пользователя или пароль";
             this.errorLabel.Visible = false;
             // 
             // toAdminLoginButton

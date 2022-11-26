@@ -37,7 +37,7 @@ namespace HotelManagementSystem.StartScreens
 
         private void enterButton_Click(object sender, EventArgs e)
         {
-            if (ProjectHelper.IsAnyOfFieldsNullOrEmpty(adminLoginField.Texts, adminPasswordField.Texts))
+            if (ProjectHelper.AreAllTextBoxesFilled(adminLoginField.Texts, adminPasswordField.Texts))
             {
                 MessageBox.Show("Все поля обязательны к заполнению.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

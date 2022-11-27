@@ -17,6 +17,8 @@ public partial class HotelDbContext : DbContext
 
     public virtual DbSet<Admin> Admins { get; set; }
 
+    public virtual DbSet<Department> Departments { get; set; }
+
     public virtual DbSet<Hotel> Hotels { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -25,6 +27,13 @@ public partial class HotelDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Department>(entity =>
+        {
+            entity.HasOne(d => d.Hotel).WithMany(p => p.Departments)
+                .HasForeignKey(d => d.HotelId)
+                .OnDelete(DeleteBehavior.ClientSetNull);
+        });
+
         modelBuilder.Entity<Hotel>(entity =>
         {
             entity.HasIndex(e => e.HotelAddress, "IX_Hotels_HotelAddress").IsUnique();

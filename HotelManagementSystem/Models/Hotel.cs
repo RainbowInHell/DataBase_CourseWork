@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace HotelManagementSystem.Models;
 
-public class Hotel
+public partial class Hotel
 {
     public long HotelId { get; set; }
 
@@ -28,4 +28,6 @@ public class Hotel
     public string HotelAddress { get; set; } = null!;
 
     public string HotelZip { get; set; } = null!;
+
+    public virtual ICollection<Department> Departments { get; } = new List<Department>();
 }

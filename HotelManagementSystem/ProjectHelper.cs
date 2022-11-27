@@ -60,6 +60,9 @@ namespace HotelManagementSystem
 
         public static void FillPanelWithWindow(Guna2Panel parentPanel, Form formToLoad, ScreenFlag screenFlag)
         {
+            if (parentPanel.Controls.Count > 0)
+                parentPanel.Controls.RemoveAt(0);
+
             switch (screenFlag)
             {
                 case ScreenFlag.AdminHotelsViewScreenFlag:

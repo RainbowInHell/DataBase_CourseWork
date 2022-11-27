@@ -1,23 +1,19 @@
 ﻿using Guna.UI2.WinForms;
 using HotelManagementSystem.ControlScreens;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Guna.UI2.WinForms.Suite.Descriptions;
+using HotelManagementSystem.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace HotelManagementSystem
 {
     public static class ProjectHelper
     {
-        public enum ScreenFlag { AdminHotelsViewScreenFlag, EmployeesScreenFlag };
+        public enum ScreenFlag { AdminHotelsViewScreenFlag, EmployeesScreenFlag, DepartmentsScreenFlag };
 
         #region WorkWithFieldsRegion
 
         public static bool AreAllTextBoxesFilled(params string[] values)
         {
-            return values.Any(x => string.IsNullOrEmpty(x)) ? true : false;
+            return !values.Any(x => string.IsNullOrEmpty(x));
         }
 
         public static bool AreAllTextBoxesFilled(Control.ControlCollection controlsToCheck)
@@ -81,6 +77,38 @@ namespace HotelManagementSystem
             formToLoad.FormBorderStyle = FormBorderStyle.None;
             formToLoad.Dock = DockStyle.Fill;
             formToLoad.Show();
+        }
+
+        public static bool DeleteButtonLogic(HotelDbContext _context, ScreenFlag screenFlag, string selectedHotelId, string selectedEntityId = "")
+        {
+            object entityToDelete = null;
+
+            _context.ChangeTracker.Clear();
+
+            switch (screenFlag)
+            {
+                case ScreenFlag.DepartmentsScreenFlag:
+                    entityToDelete = _context.Departments.AsNoTracking().FirstOrDefault(dep => dep.DepartmentId == int.Parse(selectedEntityId) && dep.HotelId == int.Parse(selectedHotelId));
+
+                    if (entityToDelete == null) return false;
+
+                    _context.Departments.Remove((Department)entityToDelete);
+                    _context.SaveChanges();
+                    _context.Departments.Load();
+                    return true;
+
+                case ScreenFlag.AdminHotelsViewScreenFlag:
+                    entityToDelete = _context.Hotels.AsNoTracking().FirstOrDefault(hot => hot.HotelId == int.Parse(selectedHotelId));
+
+                    if (entityToDelete == null) return false;
+
+                    _context.Hotels.Remove((Hotel)entityToDelete);
+                    _context.SaveChanges();
+                    _context.Hotels.Load();
+                    return true;
+            }
+
+            return false;
         }
 
         #endregion

@@ -27,17 +27,9 @@ namespace HotelManagementSystem.StartScreens
             _context.Database.EnsureCreated();
         }
 
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            base.OnClosing(e);
-
-            _context?.Dispose();
-            _context = null;
-        }
-
         private void enterButton_Click(object sender, EventArgs e)
         {
-            if (ProjectHelper.AreAllTextBoxesFilled(adminLoginField.Texts, adminPasswordField.Texts))
+            if (!ProjectHelper.AreAllTextBoxesFilled(adminLoginField.Texts, adminPasswordField.Texts))
             {
                 MessageBox.Show("Все поля обязательны к заполнению.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -47,7 +39,7 @@ namespace HotelManagementSystem.StartScreens
 
             if (status != null)
             {
-                this.Hide();
+                this.Close();
 
                 _adminDashboard = new AdminDashboard(_context);
                 _adminDashboard.Show();

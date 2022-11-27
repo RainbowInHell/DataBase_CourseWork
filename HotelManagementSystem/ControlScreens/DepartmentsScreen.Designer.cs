@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepartmentsScreen));
             this.label1 = new System.Windows.Forms.Label();
-            this.departmentTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.departmentsTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.departmentId = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,7 +48,9 @@
             this.deppartmentNameField = new System.Windows.Forms.TextBox();
             this.departmentSalaryField = new System.Windows.Forms.TextBox();
             this.departmentDescriptionField = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.departmentTable)).BeginInit();
+            this.label5 = new System.Windows.Forms.Label();
+            this.hotelIdCMBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.departmentsTable)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,59 +65,59 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "Отделы";
             // 
-            // departmentTable
+            // departmentsTable
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.departmentTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.departmentTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.departmentTable.ColumnHeadersHeight = 40;
-            this.departmentTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.departmentTable.DefaultCellStyle = dataGridViewCellStyle12;
-            this.departmentTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.departmentTable.Location = new System.Drawing.Point(52, 73);
-            this.departmentTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.departmentTable.Name = "departmentTable";
-            this.departmentTable.ReadOnly = true;
-            this.departmentTable.RowHeadersVisible = false;
-            this.departmentTable.RowHeadersWidth = 51;
-            this.departmentTable.RowTemplate.Height = 35;
-            this.departmentTable.Size = new System.Drawing.Size(671, 466);
-            this.departmentTable.TabIndex = 79;
-            this.departmentTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.departmentTable.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.departmentTable.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.departmentTable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.departmentTable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.departmentTable.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.departmentTable.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.departmentTable.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.departmentTable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.departmentTable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.departmentTable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.departmentTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.departmentTable.ThemeStyle.HeaderStyle.Height = 40;
-            this.departmentTable.ThemeStyle.ReadOnly = true;
-            this.departmentTable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.departmentTable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.departmentTable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.departmentTable.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.departmentTable.ThemeStyle.RowsStyle.Height = 35;
-            this.departmentTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.departmentTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.departmentsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.departmentsTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.departmentsTable.ColumnHeadersHeight = 40;
+            this.departmentsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.departmentsTable.DefaultCellStyle = dataGridViewCellStyle3;
+            this.departmentsTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.departmentsTable.Location = new System.Drawing.Point(52, 73);
+            this.departmentsTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.departmentsTable.Name = "departmentsTable";
+            this.departmentsTable.ReadOnly = true;
+            this.departmentsTable.RowHeadersVisible = false;
+            this.departmentsTable.RowHeadersWidth = 51;
+            this.departmentsTable.RowTemplate.Height = 35;
+            this.departmentsTable.Size = new System.Drawing.Size(671, 466);
+            this.departmentsTable.TabIndex = 79;
+            this.departmentsTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.departmentsTable.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.departmentsTable.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.departmentsTable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.departmentsTable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.departmentsTable.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.departmentsTable.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.departmentsTable.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.departmentsTable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.departmentsTable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.departmentsTable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.departmentsTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.departmentsTable.ThemeStyle.HeaderStyle.Height = 40;
+            this.departmentsTable.ThemeStyle.ReadOnly = true;
+            this.departmentsTable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.departmentsTable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.departmentsTable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.departmentsTable.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.departmentsTable.ThemeStyle.RowsStyle.Height = 35;
+            this.departmentsTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.departmentsTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // guna2CircleButton1
             // 
@@ -160,7 +162,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label2.Location = new System.Drawing.Point(730, 228);
+            this.label2.Location = new System.Drawing.Point(731, 217);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 25);
@@ -172,7 +174,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.label3.Location = new System.Drawing.Point(730, 299);
+            this.label3.Location = new System.Drawing.Point(730, 284);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 25);
@@ -238,6 +240,7 @@
             this.addButton.Size = new System.Drawing.Size(134, 54);
             this.addButton.TabIndex = 89;
             this.addButton.Text = "ДОБАВИТЬ";
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // guna2CircleButton2
             // 
@@ -269,18 +272,45 @@
             // 
             // departmentSalaryField
             // 
-            this.departmentSalaryField.Location = new System.Drawing.Point(730, 256);
+            this.departmentSalaryField.Location = new System.Drawing.Point(730, 245);
             this.departmentSalaryField.Name = "departmentSalaryField";
             this.departmentSalaryField.Size = new System.Drawing.Size(142, 27);
             this.departmentSalaryField.TabIndex = 96;
             // 
             // departmentDescriptionField
             // 
-            this.departmentDescriptionField.Location = new System.Drawing.Point(730, 327);
+            this.departmentDescriptionField.Location = new System.Drawing.Point(730, 312);
             this.departmentDescriptionField.Multiline = true;
             this.departmentDescriptionField.Name = "departmentDescriptionField";
-            this.departmentDescriptionField.Size = new System.Drawing.Size(276, 85);
+            this.departmentDescriptionField.Size = new System.Drawing.Size(185, 29);
             this.departmentDescriptionField.TabIndex = 97;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.label5.Location = new System.Drawing.Point(731, 353);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 25);
+            this.label5.TabIndex = 98;
+            this.label5.Text = "Id Отеля";
+            // 
+            // hotelIdCMBox
+            // 
+            this.hotelIdCMBox.BackColor = System.Drawing.Color.Transparent;
+            this.hotelIdCMBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.hotelIdCMBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.hotelIdCMBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.hotelIdCMBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.hotelIdCMBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.hotelIdCMBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.hotelIdCMBox.ItemHeight = 30;
+            this.hotelIdCMBox.Location = new System.Drawing.Point(730, 376);
+            this.hotelIdCMBox.Name = "hotelIdCMBox";
+            this.hotelIdCMBox.Size = new System.Drawing.Size(175, 36);
+            this.hotelIdCMBox.TabIndex = 99;
             // 
             // DepartmentsScreen
             // 
@@ -288,6 +318,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.hotelIdCMBox);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.departmentDescriptionField);
             this.Controls.Add(this.departmentSalaryField);
             this.Controls.Add(this.deppartmentNameField);
@@ -302,14 +334,14 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.departmentId);
-            this.Controls.Add(this.departmentTable);
+            this.Controls.Add(this.departmentsTable);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DepartmentsScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DepartmentsScreen";
-            ((System.ComponentModel.ISupportInitialize)(this.departmentTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.departmentsTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,7 +350,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2DataGridView departmentTable;
+        private Guna.UI2.WinForms.Guna2DataGridView departmentsTable;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private System.Windows.Forms.Label departmentId;
         private System.Windows.Forms.Label label4;
@@ -333,5 +365,7 @@
         private TextBox deppartmentNameField;
         private TextBox departmentSalaryField;
         private TextBox departmentDescriptionField;
+        private Label label5;
+        private Guna.UI2.WinForms.Guna2ComboBox hotelIdCMBox;
     }
 }

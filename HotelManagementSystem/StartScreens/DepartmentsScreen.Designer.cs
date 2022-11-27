@@ -34,7 +34,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepartmentsScreen));
             this.label1 = new System.Windows.Forms.Label();
             this.departmentsTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.searchDepartmentById = new Guna.UI2.WinForms.Guna2CircleButton();
             this.departmentId = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@
             this.addButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.departmentIdField = new System.Windows.Forms.TextBox();
-            this.deppartmentNameField = new System.Windows.Forms.TextBox();
+            this.departmentNameField = new System.Windows.Forms.TextBox();
             this.departmentSalaryField = new System.Windows.Forms.TextBox();
             this.departmentDescriptionField = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -119,19 +119,20 @@
             this.departmentsTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.departmentsTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2CircleButton1
+            // searchDepartmentById
             // 
-            this.guna2CircleButton1.BorderThickness = 2;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton1.Image")));
-            this.guna2CircleButton1.Location = new System.Drawing.Point(862, 85);
-            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(53, 43);
-            this.guna2CircleButton1.TabIndex = 82;
+            this.searchDepartmentById.BorderThickness = 2;
+            this.searchDepartmentById.FillColor = System.Drawing.Color.Transparent;
+            this.searchDepartmentById.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.searchDepartmentById.ForeColor = System.Drawing.Color.White;
+            this.searchDepartmentById.Image = ((System.Drawing.Image)(resources.GetObject("searchDepartmentById.Image")));
+            this.searchDepartmentById.Location = new System.Drawing.Point(862, 85);
+            this.searchDepartmentById.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.searchDepartmentById.Name = "searchDepartmentById";
+            this.searchDepartmentById.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.searchDepartmentById.Size = new System.Drawing.Size(53, 43);
+            this.searchDepartmentById.TabIndex = 82;
+            this.searchDepartmentById.Click += new System.EventHandler(this.searchDepartmentById_Click);
             // 
             // departmentId
             // 
@@ -195,6 +196,7 @@
             this.clearButton.Size = new System.Drawing.Size(134, 54);
             this.clearButton.TabIndex = 92;
             this.clearButton.Text = "ОЧИСТИТЬ";
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // updateButton
             // 
@@ -210,6 +212,7 @@
             this.updateButton.Size = new System.Drawing.Size(134, 54);
             this.updateButton.TabIndex = 91;
             this.updateButton.Text = "ОБНОВИТЬ";
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // deleteButton
             // 
@@ -225,6 +228,7 @@
             this.deleteButton.Size = new System.Drawing.Size(134, 54);
             this.deleteButton.TabIndex = 90;
             this.deleteButton.Text = "УДАЛИТЬ";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // addButton
             // 
@@ -249,12 +253,14 @@
             this.guna2CircleButton2.FillColor = System.Drawing.Color.Transparent;
             this.guna2CircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.guna2CircleButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CircleButton2.Image")));
             this.guna2CircleButton2.Location = new System.Drawing.Point(1017, 19);
             this.guna2CircleButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2CircleButton2.Name = "guna2CircleButton2";
             this.guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton2.Size = new System.Drawing.Size(33, 40);
+            this.guna2CircleButton2.Size = new System.Drawing.Size(33, 32);
             this.guna2CircleButton2.TabIndex = 93;
+            this.guna2CircleButton2.Click += new System.EventHandler(this.guna2CircleButton2_Click);
             // 
             // departmentIdField
             // 
@@ -263,12 +269,12 @@
             this.departmentIdField.Size = new System.Drawing.Size(125, 27);
             this.departmentIdField.TabIndex = 94;
             // 
-            // deppartmentNameField
+            // departmentNameField
             // 
-            this.deppartmentNameField.Location = new System.Drawing.Point(730, 178);
-            this.deppartmentNameField.Name = "deppartmentNameField";
-            this.deppartmentNameField.Size = new System.Drawing.Size(185, 27);
-            this.deppartmentNameField.TabIndex = 95;
+            this.departmentNameField.Location = new System.Drawing.Point(730, 178);
+            this.departmentNameField.Name = "departmentNameField";
+            this.departmentNameField.Size = new System.Drawing.Size(185, 27);
+            this.departmentNameField.TabIndex = 95;
             // 
             // departmentSalaryField
             // 
@@ -311,6 +317,7 @@
             this.hotelIdCMBox.Name = "hotelIdCMBox";
             this.hotelIdCMBox.Size = new System.Drawing.Size(175, 36);
             this.hotelIdCMBox.TabIndex = 99;
+            this.hotelIdCMBox.SelectedIndexChanged += new System.EventHandler(this.hotelIdCMBox_SelectedIndexChanged);
             // 
             // DepartmentsScreen
             // 
@@ -322,7 +329,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.departmentDescriptionField);
             this.Controls.Add(this.departmentSalaryField);
-            this.Controls.Add(this.deppartmentNameField);
+            this.Controls.Add(this.departmentNameField);
             this.Controls.Add(this.departmentIdField);
             this.Controls.Add(this.guna2CircleButton2);
             this.Controls.Add(this.clearButton);
@@ -332,7 +339,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2CircleButton1);
+            this.Controls.Add(this.searchDepartmentById);
             this.Controls.Add(this.departmentId);
             this.Controls.Add(this.departmentsTable);
             this.Controls.Add(this.label1);
@@ -351,7 +358,7 @@
 
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView departmentsTable;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Guna.UI2.WinForms.Guna2CircleButton searchDepartmentById;
         private System.Windows.Forms.Label departmentId;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
@@ -362,7 +369,7 @@
         private Guna.UI2.WinForms.Guna2Button addButton;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
         private TextBox departmentIdField;
-        private TextBox deppartmentNameField;
+        private TextBox departmentNameField;
         private TextBox departmentSalaryField;
         private TextBox departmentDescriptionField;
         private Label label5;

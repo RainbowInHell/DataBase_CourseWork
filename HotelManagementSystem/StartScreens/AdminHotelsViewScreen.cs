@@ -22,9 +22,9 @@ namespace HotelManagementSystem.ControlScreens
         {
             base.OnLoad(e);
 
-            _context = new HotelDbContext();
-            _context.Database.EnsureCreated();
+            _context?.Database.EnsureCreated();
             _context.Hotels.Load();
+
             hotelsTable.DataSource = _context.Hotels.Local.ToBindingList();
         }
 

@@ -14,6 +14,7 @@ namespace HotelManagementSystem.ControlScreens
     public partial class EmployeesScreen : Form
     {
         private HotelDbContext? _context;
+        private DepartmentsScreen? _departmentsScreen;
 
         public EmployeesScreen()
         {
@@ -23,6 +24,12 @@ namespace HotelManagementSystem.ControlScreens
         public EmployeesScreen(HotelDbContext _context) : this()
         {
             this._context = _context;
+        }
+
+        private void addDepartmentButton_Click(object sender, EventArgs e)
+        {
+            _departmentsScreen = new DepartmentsScreen(_context);
+            _departmentsScreen.Show();
         }
     }
 }

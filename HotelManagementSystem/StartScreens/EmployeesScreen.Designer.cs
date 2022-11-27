@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeesScreen));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -49,7 +49,7 @@
             this.deleteButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.updateButton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.addButton = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.addDepartmentButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.employeeTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.clearButton = new Guna.UI2.WinForms.Guna2Button();
@@ -294,43 +294,44 @@
             this.addButton.Size = new System.Drawing.Size(53, 47);
             this.addButton.TabIndex = 119;
             // 
-            // guna2GradientButton1
+            // addDepartmentButton
             // 
-            this.guna2GradientButton1.BorderRadius = 16;
-            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(240, 10);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(212, 42);
-            this.guna2GradientButton1.TabIndex = 113;
-            this.guna2GradientButton1.Text = "Добавить отдел";
+            this.addDepartmentButton.BorderRadius = 16;
+            this.addDepartmentButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addDepartmentButton.FillColor = System.Drawing.Color.DarkGray;
+            this.addDepartmentButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            this.addDepartmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.addDepartmentButton.ForeColor = System.Drawing.Color.White;
+            this.addDepartmentButton.Location = new System.Drawing.Point(240, 10);
+            this.addDepartmentButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addDepartmentButton.Name = "addDepartmentButton";
+            this.addDepartmentButton.Size = new System.Drawing.Size(212, 42);
+            this.addDepartmentButton.TabIndex = 113;
+            this.addDepartmentButton.Text = "Добавить отдел";
+            this.addDepartmentButton.Click += new System.EventHandler(this.addDepartmentButton_Click);
             // 
             // employeeTable
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.employeeTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.employeeTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.employeeTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(35)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.employeeTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.employeeTable.ColumnHeadersHeight = 40;
             this.employeeTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.employeeTable.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.employeeTable.DefaultCellStyle = dataGridViewCellStyle9;
             this.employeeTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.employeeTable.Location = new System.Drawing.Point(25, 62);
             this.employeeTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -463,7 +464,7 @@
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.employeeTable);
-            this.Controls.Add(this.guna2GradientButton1);
+            this.Controls.Add(this.addDepartmentButton);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.joiningDatePicker);
             this.Controls.Add(this.label15);
@@ -510,7 +511,7 @@
         private Guna.UI2.WinForms.Guna2CircleButton deleteButton;
         private Guna.UI2.WinForms.Guna2CircleButton updateButton;
         private Guna.UI2.WinForms.Guna2CircleButton addButton;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton addDepartmentButton;
         private Guna.UI2.WinForms.Guna2DataGridView employeeTable;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button clearButton;

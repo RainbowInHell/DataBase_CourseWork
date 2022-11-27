@@ -36,7 +36,7 @@ namespace HotelManagementSystem.StartScreens
 
         private void employessButton_Click(object sender, EventArgs e)
         {
-            _employeesScreen= new EmployeesScreen();
+            _employeesScreen = new EmployeesScreen(_context);
 
             ProjectHelper.FillPanelWithWindow(mainPanel, _employeesScreen, ProjectHelper.ScreenFlag.EmployeesScreenFlag);
         }

@@ -29,9 +29,7 @@ public partial class HotelDbContext : DbContext
     {
         modelBuilder.Entity<Department>(entity =>
         {
-            entity.HasOne(d => d.Hotel).WithMany(p => p.Departments)
-                .HasForeignKey(d => d.HotelId)
-                .OnDelete(DeleteBehavior.ClientSetNull);
+            entity.HasOne(d => d.Hotel).WithMany(p => p.Departments).HasForeignKey(d => d.HotelId);
         });
 
         modelBuilder.Entity<Hotel>(entity =>

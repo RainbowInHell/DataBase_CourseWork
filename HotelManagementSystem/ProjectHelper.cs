@@ -94,7 +94,7 @@ namespace HotelManagementSystem
 
                     _context.Departments.Remove((Department)entityToDelete);
                     _context.SaveChanges();
-                    _context.Departments.Load();
+
                     return true;
 
                 case ScreenFlag.AdminHotelsViewScreenFlag:
@@ -109,6 +109,17 @@ namespace HotelManagementSystem
             }
 
             return false;
+        }
+
+        public static void Refreshing(HotelDbContext _context, Guna2DataGridView _tabel)
+        {
+            _context = new HotelDbContext();
+            _context.Departments.Load();
+            BindingSource _bindingSource = new BindingSource();
+            _bindingSource.DataSource = _context.Departments.Local.ToBindingList();
+
+            _tabel.DataSource = _bindingSource;
+            _tabel.Refresh();
         }
 
         #endregion

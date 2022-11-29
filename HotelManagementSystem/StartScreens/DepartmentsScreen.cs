@@ -81,8 +81,7 @@ namespace HotelManagementSystem.ControlScreens
                 return;
             }
 
-            departmentsTable.DataSource = _context.Departments.Local.ToBindingList();
-            departmentsTable.Refresh();
+            ProjectHelper.Refreshing(_context, departmentsTable);
         }
 
         private void guna2CircleButton2_Click(object sender, EventArgs e)
@@ -113,10 +112,8 @@ namespace HotelManagementSystem.ControlScreens
             _tempDepartment.HotelId = int.Parse(selectedHotelId);
 
             _context.SaveChanges();
-            _context.Departments.Load();
 
-            departmentsTable.DataSource = _context.Departments.Local.ToBindingList();
-            departmentsTable.Refresh();
+            ProjectHelper.Refreshing(_context, departmentsTable);
         }
 
         private void searchDepartmentById_Click(object sender, EventArgs e)

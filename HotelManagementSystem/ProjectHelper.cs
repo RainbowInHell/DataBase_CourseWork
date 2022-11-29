@@ -79,7 +79,7 @@ namespace HotelManagementSystem
             formToLoad.Show();
         }
 
-        public static bool DeleteButtonLogic(HotelDbContext _context, ScreenFlag screenFlag, string selectedHotelId, string selectedEntityId = "")
+        public static bool DeleteButtonLogic(HotelDbContext _context, ScreenFlag screenFlag, string selectedHotelId = "", string selectedEntityId = "")
         {
             object entityToDelete = null;
 
@@ -88,7 +88,7 @@ namespace HotelManagementSystem
             switch (screenFlag)
             {
                 case ScreenFlag.DepartmentsScreenFlag:
-                    entityToDelete = _context.Departments.AsNoTracking().FirstOrDefault(dep => dep.DepartmentId == int.Parse(selectedEntityId) && dep.HotelId == int.Parse(selectedHotelId));
+                    entityToDelete = _context.Departments.AsNoTracking().FirstOrDefault(dep => dep.DepartmentId == int.Parse(selectedEntityId));
 
                     if (entityToDelete == null) return false;
 

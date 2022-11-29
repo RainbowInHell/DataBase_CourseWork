@@ -49,6 +49,12 @@ namespace HotelManagementSystem.ControlScreens
 
             _context.Departments.Add(_tempDepartment);
             _context.SaveChanges();
+
+            //if (_context.Departments.Any(dep => dep.DepartmentName == departmentNameField.Text && dep.HotelId == int.Parse(selectedHotelId)))
+            //{
+            //    MessageBox.Show("Test");
+            //    return;
+            //}
         }
 
         private void hotelIdCMBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -65,13 +71,13 @@ namespace HotelManagementSystem.ControlScreens
         {
             if (!ProjectHelper.AreAllTextBoxesFilled(departmentIdField.Text))
             {
-                MessageBox.Show("Поле Id обязательно к заполнению.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Поле Id Отдела обязательно к заполнению.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if(!ProjectHelper.DeleteButtonLogic(_context, ProjectHelper.ScreenFlag.DepartmentsScreenFlag, selectedHotelId, departmentIdField.Text))
+            if (!ProjectHelper.DeleteButtonLogic(_context, ProjectHelper.ScreenFlag.DepartmentsScreenFlag, selectedEntityId: departmentIdField.Text))
             {
-                MessageBox.Show($"Отсутствует отдел с id = {departmentIdField.Text}.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"Отсутствует отдел с Id = {departmentIdField.Text}.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -133,7 +139,7 @@ namespace HotelManagementSystem.ControlScreens
             departmentNameField.Text = _tempDepartment.DepartmentName;
             departmentSalaryField.Text = _tempDepartment.DepartmentInitialSalary.ToString();
             departmentDescriptionField.Text = _tempDepartment.DepartmentDescription;
-            (hotelIdCMBox.SelectedItem as Hotel).HotelName = _context.Hotels.AsNoTracking().FirstOrDefault(hotel => hotel.HotelId == _tempDepartment.HotelId).HotelName;
+            //(hotelIdCMBox.SelectedItem as Hotel).HotelName = _context.Hotels.AsNoTracking().FirstOrDefault(hotel => hotel.HotelId == _tempDepartment.HotelId).HotelName;
         }
     }
 }

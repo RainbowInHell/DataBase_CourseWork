@@ -30,7 +30,7 @@ namespace HotelManagementSystem.ControlScreens
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            if(!ProjectHelper.AreAllTextBoxesFilled(hotelNameField.Text, hotelContactNumberField.Text, hotelEmaildField.Text, hotelWebSiteField.Text,
+            if (!ProjectHelper.AreAllTextBoxesFilled(hotelNameField.Text, hotelContactNumberField.Text, hotelEmaildField.Text, hotelWebSiteField.Text,
                 hotelDescriptionField.Text, hotelFloorsCountField.Text, hotelCityField.Text, hotelCapacityField.Text, hotelCountryField.Text,
                 hotelAdresField.Text, hotelZipCodeField.Text))
             {
@@ -64,11 +64,11 @@ namespace HotelManagementSystem.ControlScreens
         {
             if (!ProjectHelper.AreAllTextBoxesFilled(hotelIdField.Text))
             {
-                MessageBox.Show("Поле Id обязательно к заполнению.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Поле Id Отлеля обязательно к заполнению.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if(!ProjectHelper.DeleteButtonLogic(_context, ProjectHelper.ScreenFlag.AdminHotelsViewScreenFlag, hotelIdField.Text))
+            if (!ProjectHelper.DeleteButtonLogic(_context, ProjectHelper.ScreenFlag.AdminHotelsViewScreenFlag, selectedHotelId: hotelIdField.Text))
             {
                 MessageBox.Show($"Отсутствует отель с id = {hotelIdField.Text}.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -125,7 +125,7 @@ namespace HotelManagementSystem.ControlScreens
             _tempHotel = null;
             _tempHotel = _context.Hotels.AsNoTracking().FirstOrDefault(hotel => hotel.HotelId == int.Parse(hotelIdField.Text));
 
-            if(_tempHotel == null) 
+            if (_tempHotel == null)
             {
                 MessageBox.Show($"Отсутствует отель с id = {hotelIdField.Text}.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

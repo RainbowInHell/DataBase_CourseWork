@@ -8,6 +8,7 @@ namespace HotelManagementSystem.StartScreens
     {
         private HotelDbContext? _context;
         private SuperAdminLoginScreen? _superAdminLoginScreen;
+        //private ResetPasswordScreen? _resetPasswordScreen;
         private DashboardScreen? _dashboardScreen;
 
         public UserLoginScreen()
@@ -42,6 +43,14 @@ namespace HotelManagementSystem.StartScreens
         private void closeButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void forgetPasswordLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            //_resetPasswordScreen = new ResetPasswordScreen(_context);
+            //_resetPasswordScreen.Show();
         }
     }
 }

@@ -171,6 +171,7 @@
             this.forgetPasswordLabel.Size = new System.Drawing.Size(125, 18);
             this.forgetPasswordLabel.TabIndex = 10;
             this.forgetPasswordLabel.Text = "Забыли пароль?";
+            this.forgetPasswordLabel.Click += new System.EventHandler(this.forgetPasswordLabel_Click);
             // 
             // closeButton
             // 

@@ -172,7 +172,7 @@ namespace HotelManagementSystem.ControlScreens
             departmentNameField.Text = _tempDepartment.DepartmentName;
             departmentSalaryField.Text = _tempDepartment.DepartmentInitialSalary.ToString();
             departmentDescriptionField.Text = _tempDepartment.DepartmentDescription;
-            //(hotelIdCMBox.SelectedItem as Hotel).HotelName = _context.Hotels.AsNoTracking().FirstOrDefault(hotel => hotel.HotelId == _tempDepartment.HotelId).HotelName;
+            hotelIdCMBox.SelectedValue = _tempDepartment.HotelId;
         }
     }
 }

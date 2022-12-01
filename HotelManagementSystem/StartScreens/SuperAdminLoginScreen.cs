@@ -46,7 +46,7 @@ namespace HotelManagementSystem.StartScreens
             }
             else
             {
-                MessageBox.Show("Неверные данные!", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Неверные данные.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

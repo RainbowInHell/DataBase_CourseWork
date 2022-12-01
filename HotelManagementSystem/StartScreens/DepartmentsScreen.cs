@@ -1,5 +1,8 @@
 ﻿using HotelManagementSystem.Models;
 using Microsoft.EntityFrameworkCore;
+using MySqlConnector;
+using System.Collections.Generic;
+using System.Data;
 
 namespace HotelManagementSystem.ControlScreens
 {
@@ -7,6 +10,10 @@ namespace HotelManagementSystem.ControlScreens
     {
         private HotelDbContext? _context;
         private Department? _tempDepartment;
+
+        private MySqlConnection? _sqlConn;
+        private MySqlCommand? _cmd;
+
         private string selectedHotelId;
 
         public DepartmentsScreen()
@@ -41,6 +48,41 @@ namespace HotelManagementSystem.ControlScreens
                 return;
             }
 
+            _sqlConn = new MySqlConnection();
+            _sqlConn.ConnectionString = ProjectHelper.CONNECTION_STRING;
+            _cmd = new MySqlCommand();
+
+            try
+            {
+                _sqlConn.Open();
+                _cmd.Connection = _sqlConn;
+
+                _cmd.CommandText = "DoesDepartmentExistInHotel";
+                _cmd.CommandType = CommandType.StoredProcedure;
+
+                _cmd.Parameters.AddWithValue("@depName", departmentNameField.Text);
+                _cmd.Parameters["@depName"].Direction = ParameterDirection.Input;
+
+                _cmd.Parameters.AddWithValue("@hotId", int.Parse(selectedHotelId));
+                _cmd.Parameters["@hotId"].Direction = ParameterDirection.Input;
+
+                _cmd.Parameters.Add("@result", MySqlDbType.Int32);
+                _cmd.Parameters["@result"].Direction = ParameterDirection.Output;
+
+                _cmd.ExecuteNonQuery();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show($"Error {ex.Number} has occurred: {ex.Message}");
+            }
+            finally { _sqlConn.Close(); }
+
+            if ((int)_cmd.Parameters["@result"].Value == 1)
+            {
+                MessageBox.Show($"Отдел с именем {departmentNameField.Text} уже существует в отеле с Id {selectedHotelId}.", "Внимаение!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             _tempDepartment = new Department();
             _tempDepartment.DepartmentName = departmentNameField.Text;
             _tempDepartment.DepartmentInitialSalary = int.Parse(departmentSalaryField.Text);
@@ -49,12 +91,6 @@ namespace HotelManagementSystem.ControlScreens
 
             _context.Departments.Add(_tempDepartment);
             _context.SaveChanges();
-
-            //if (_context.Departments.Any(dep => dep.DepartmentName == departmentNameField.Text && dep.HotelId == int.Parse(selectedHotelId)))
-            //{
-            //    MessageBox.Show("Test");
-            //    return;
-            //}
         }
 
         private void hotelIdCMBox_SelectedIndexChanged(object sender, EventArgs e)

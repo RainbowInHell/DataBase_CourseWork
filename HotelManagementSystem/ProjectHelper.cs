@@ -7,6 +7,7 @@ namespace HotelManagementSystem
 {
     public static class ProjectHelper
     {
+        public static readonly string CONNECTION_STRING = "Server=127.0.0.1;Port=3306;Database=HotelDb;Uid=root;Pwd=matvey2003";
         public enum ScreenFlag { AdminHotelsViewScreenFlag, EmployeesScreenFlag, DepartmentsScreenFlag };
 
         #region WorkWithFieldsRegion

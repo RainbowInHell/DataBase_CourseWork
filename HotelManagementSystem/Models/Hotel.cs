@@ -8,6 +8,7 @@ namespace HotelManagementSystem.Models
         public Hotel()
         {
             Departments = new HashSet<Department>();
+            Employees = new HashSet<Employee>();
         }
 
         public int HotelId { get; set; }
@@ -24,5 +25,6 @@ namespace HotelManagementSystem.Models
         public string HotelZip { get; set; } = null!;
 
         public virtual ICollection<Department> Departments { get; set; }
+        public virtual ICollection<Employee> Employees { get; set; }
     }
 }

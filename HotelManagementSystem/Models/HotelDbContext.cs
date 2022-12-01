@@ -18,6 +18,7 @@ namespace HotelManagementSystem.Models
 
         public virtual DbSet<Admin> Admins { get; set; } = null!;
         public virtual DbSet<Department> Departments { get; set; } = null!;
+        public virtual DbSet<Employee> Employees { get; set; } = null!;
         public virtual DbSet<Hotel> Hotels { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -59,6 +60,55 @@ namespace HotelManagementSystem.Models
                     .HasConstraintName("departments_ibfk_1");
             });
 
+            modelBuilder.Entity<Employee>(entity =>
+            {
+                entity.ToTable("employees");
+
+                entity.HasIndex(e => e.DepartmentId, "DepartmentId");
+
+                entity.HasIndex(e => e.EmployeeContactNumber, "EmployeeContactNumber")
+                    .IsUnique();
+
+                entity.HasIndex(e => e.EmployeeEmailAddress, "EmployeeEmailAddress")
+                    .IsUnique();
+
+                entity.HasIndex(e => e.EmployeeFirstName, "EmployeeFirstName")
+                    .IsUnique();
+
+                entity.HasIndex(e => e.EmployeeLastName, "EmployeeLastName")
+                    .IsUnique();
+
+                entity.HasIndex(e => e.EmployeeLogin, "EmployeeLogin")
+                    .IsUnique();
+
+                entity.HasIndex(e => e.HotelId, "HotelId");
+
+                entity.Property(e => e.EmployeeAdress).HasMaxLength(35);
+
+                entity.Property(e => e.EmployeeContactNumber).HasMaxLength(13);
+
+                entity.Property(e => e.EmployeeEmailAddress).HasMaxLength(35);
+
+                entity.Property(e => e.EmployeeFirstName).HasMaxLength(20);
+
+                entity.Property(e => e.EmployeeLastName).HasMaxLength(20);
+
+                entity.Property(e => e.EmployeeLogin).HasMaxLength(20);
+
+                entity.Property(e => e.EmployeePassword).HasMaxLength(20);
+
+                entity.HasOne(d => d.Department)
+                    .WithMany(p => p.Employees)
+                    .HasForeignKey(d => d.DepartmentId)
+                    .OnDelete(DeleteBehavior.SetNull)
+                    .HasConstraintName("employees_ibfk_1");
+
+                entity.HasOne(d => d.Hotel)
+                    .WithMany(p => p.Employees)
+                    .HasForeignKey(d => d.HotelId)
+                    .HasConstraintName("employees_ibfk_2");
+            });
+
             modelBuilder.Entity<Hotel>(entity =>
             {
                 entity.ToTable("hotels");
@@ -82,7 +132,7 @@ namespace HotelManagementSystem.Models
 
                 entity.Property(e => e.HotelCity).HasMaxLength(20);
 
-                entity.Property(e => e.HotelContactNumber).HasMaxLength(15);
+                entity.Property(e => e.HotelContactNumber).HasMaxLength(13);
 
                 entity.Property(e => e.HotelCountry).HasMaxLength(20);
 
